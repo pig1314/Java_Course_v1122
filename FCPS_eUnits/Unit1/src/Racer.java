@@ -50,15 +50,7 @@ public class Racer extends Athlete
    
    public void shuttle(int spaces, int beepers)
    {
-      move();
-      jumpRight();
       sprint(spaces);
-      pick(beepers);
-      turnAround();
-      sprint(spaces);
-      jumpLeft();
-      move();
-      put(beepers);
-      turnAround();
+      pick(beepers);     
    }
 }
