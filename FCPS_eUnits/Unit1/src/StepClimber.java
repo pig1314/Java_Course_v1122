@@ -1,33 +1,27 @@
 import edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;
 
-public class Climber extends Athlete
+public class StepClimber extends Climber
 {
-   public Climber()
+   public StepClimber(int x)
    {
-      super();
-   }
-   
-   public Climber(int x)
-   {
-      super(x, 1, Display.NORTH, 1);
+      super(x);
    }
    
    public void climbUpRight()
    {
       turnLeft();
       move();
-      move();
       
       turnRight();
-      move();   
+      move();
    }
    
    public void climbDownRight()
    {
-      move(); 
-      turnRight();
       move();
+      turnRight();
+      
       move();
       turnLeft();
    }
@@ -36,18 +30,16 @@ public class Climber extends Athlete
    {
       turnRight();
       move();
-      move();
       
       turnLeft();
       move();
    }
    
    public void climbDownLeft()
-   {   
+   {
       move();
-      
       turnLeft();
-      move();
+      
       move();
       turnRight();
    }

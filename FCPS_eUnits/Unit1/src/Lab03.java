@@ -20,10 +20,7 @@ public class Lab03 {
       tenzing.climbUpRight();
       tenzing.climbUpRight();
       
-      tenzing.move();
-      
       tenzing.climbDownRight();
-      tenzing.move();
       tenzing.climbDownRight();
       tenzing.pickBeeper();
       
@@ -31,11 +28,8 @@ public class Lab03 {
       tenzing.climbUpLeft();
       tenzing.climbUpLeft();
       
-      tenzing.move();
-      
       tenzing.climbDownLeft();
       tenzing.climbDownLeft();
       tenzing.climbDownLeft();
 	}
-
 }
