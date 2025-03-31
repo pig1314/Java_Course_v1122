@@ -9,7 +9,10 @@ public class Pane_lab02 extends JPanel
       int y = 70;
       int r = 10;
       
-      g.setColor(Color.LIGHT_GRAY);
+      g.setColor(Color.RED);
+      g.fillRect(0, 0, 400, 400);
+      
+      g.setColor(new Color(245, 255, 59));
       g.fillRect(140, 70, 120, 160);// 100, 140
       
       for(int i = 0;i < 10; i++)//vertical
