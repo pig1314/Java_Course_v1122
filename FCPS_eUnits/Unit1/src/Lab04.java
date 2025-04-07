@@ -23,6 +23,7 @@ public class Lab04 {
 		// TODO Auto-generated method stub
 
 		Display.openWorld("../maps/arena.map");
+      Display.setSpeed(10);
       
       Athlete one = new Athlete();
       Athlete two = new Athlete();
