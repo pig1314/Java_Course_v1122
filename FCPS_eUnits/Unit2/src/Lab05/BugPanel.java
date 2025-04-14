@@ -16,12 +16,21 @@
          buffer.setColor(Color.BLUE);
          buffer.fillRect(0, 0, N, N);
          buffer.setColor(Color.YELLOW);
-      
-         /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
-      	/************************/
+         Bug no1 = new Bug(0, 0);
+         Bug no2 = new Bug(400, 0);
+         Bug no3 = new Bug(400, 400);
+         Bug no4 = new Bug(0, 400);
+         while(!no1.sameSpot(no2))
+         {
+            buffer.drawLine(no1.getX(), no1.getY(), no2.getX(), no2.getY());
+            buffer.drawLine(no2.getX(), no2.getY(), no3.getX(), no3.getY());
+            buffer.drawLine(no3.getX(), no3.getY(), no4.getX(), no4.getY());
+            buffer.drawLine(no4.getX(), no4.getY(), no1.getX(), no1.getY());
+            no1.walkTowards(no2, 0.1);
+            no2.walkTowards(no3, 0.1);
+            no3.walkTowards(no4, 0.1);
+            no4.walkTowards(no1, 0.1);
+         }
       }
        public void paintComponent(Graphics g)
       {
