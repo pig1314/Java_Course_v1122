@@ -2,7 +2,7 @@
    import edu.fcps.Turtle;
    import java.awt.Color;
    import javax.swing.*;
-   public class Driver08
+   public class Driver09
    {
       public static void main(String[] args)
       {
@@ -15,12 +15,15 @@
          frame.setVisible(true);
          Turtle.clear(Color.WHITE);
          
-         FlowerTurtle smidge = new FlowerTurtle();
-         smidge.setThickness(3);
-         smidge.drawShape();
+         twistyTurtle lisa = new twistyTurtle(150, 150, 0, 10, 200);
+         lisa.drawShape();
          
-         smidge = new FlowerTurtle(100, 40, Color.BLUE);
-         smidge.setThickness(4);
-         smidge.drawShape();
+         twistyTurtle2 lili = new twistyTurtle2(200, 200, 180, 0, 100);
+         lili.setColor(Color.YELLOW);
+         lili.drawShape();
+         
+         twistyTurtle3 lima = new twistyTurtle3();
+         lima.setColor(Color.GREEN);
+         lima.drawShape();
       }
    }

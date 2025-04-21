@@ -32,10 +32,10 @@
          
          for(int k = 50; k < 150; k += 50)
          {
-         smidge = new SquareTurtle(500, 250, 135, k);
-         smidge.setColor(Color.yellow);
-         smidge.setThickness(10);
-         smidge.drawShape();
+            smidge = new SquareTurtle(500, 250, 135, k);
+            smidge.setColor(Color.yellow);
+            smidge.setThickness(10);
+            smidge.drawShape();
          }            
       }
    }

@@ -4,6 +4,7 @@
    {
       private double mySize;
       private int mySides;
+      private double angle;
        public PolygonTurtle()
       {
          super();
@@ -15,28 +16,28 @@
          mySize = n;
          mySides = s;
       }
-       public PolygonTurtle(double x, double y, double h, double n, int s)
+      public PolygonTurtle(double x, double y, double h, double n, int s)
       {
          super(x, y, h);
          mySize = n;
          mySides = s;
       }
-       public void setSize(double n)
+      public void setSize(double n)
       {
          mySize = n;
       }
-       public void setSides(int s)
+      public void setSides(int s)
       {
          mySides = s;
       }
-       public void drawShape()
+      public void drawShape()
       {
-      
-         /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
-      	/************************/
-      
+         angle = (mySides - 2) * 180 / mySides;
+         for(int i = 0;i < mySides; i++)
+         {
+            System.out.println(angle);
+            forward(mySize);
+            turnLeft(180 - angle);
+         }
       }
    }
