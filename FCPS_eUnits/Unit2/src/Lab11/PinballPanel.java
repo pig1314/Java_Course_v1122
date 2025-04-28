@@ -15,7 +15,7 @@
       private Graphics myBuffer;
       private Ball ball;
       private Timer t;
-       public PinballPanel()
+      public PinballPanel()
       {
          myImage =  new BufferedImage(FRAME, FRAME, BufferedImage.TYPE_INT_RGB);
          myBuffer = myImage.getGraphics();

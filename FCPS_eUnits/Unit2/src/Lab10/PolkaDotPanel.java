@@ -15,6 +15,7 @@
       private Graphics myBuffer;
       private Timer t;
       private Polkadot pd;
+      private Polkadot pdplus;
       private int xPos, yPos;
        public PolkaDotPanel()
       {
@@ -23,6 +24,7 @@
          myBuffer.setColor(BACKGROUND);
          myBuffer.fillRect(0, 0, FRAME, FRAME);
          pd = new Polkadot();
+         pdplus = new Polkadot(100.0, 100.0, 40.0, Color.GREEN);
          t = new Timer(1000, new Listener());
          t.start();
       }
@@ -34,9 +36,12 @@
       {
           public void actionPerformed(ActionEvent e)
          {
-         /**************************
-            your code goes here
-         **************************/
+            myBuffer.setColor(BACKGROUND);
+            myBuffer.fillRect(0, 0, FRAME, FRAME);
+            
+            pdplus.jump(FRAME, FRAME);
+            pdplus.draw(myBuffer);
+            
             pd.jump(FRAME, FRAME);
             pd.draw(myBuffer);
             
